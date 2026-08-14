@@ -1,0 +1,97 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Categoria {
+  id        String      @id @default(uuid())
+  nome      String      @unique
+  createdAt DateTime    @default(now())
+
+  presentes Presente[]
+}
+
+
+model Presente {
+  id          String     @id @default(uuid())
+  nome        String
+  imagem      String
+  reservado   Boolean    @default(false)
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+
+  possuiCotas Boolean @default(false)
+  totalCotas Int @default(1)
+  categoriaId String
+  categoria   Categoria @relation(fields: [categoriaId], references: [id])
+
+  reserva     Reserva?
+  cotas Cota[]
+}
+
+model Cota {
+
+  id String @id @default(uuid())
+
+  nomePessoa String
+  token String @unique
+
+  presenteId String
+
+  presente Presente @relation(fields:[presenteId], references:[id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+}
+
+
+model Reserva {
+  id          String   @id @default(uuid())
+  nomePessoa  String
+  token       String   @unique
+  createdAt   DateTime @default(now())
+
+  presenteId  String   @unique
+  presente    Presente @relation(fields: [presenteId], references: [id])
+}
+
+
+model Mensagem {
+  id          String   @id @default(uuid())
+  nomePessoa  String
+  mensagem    String
+  token       String   @unique
+  createdAt   DateTime @default(now())
+}
+
+
+model ConfirmacaoPresenca {
+  id                 String   @id @default(uuid())
+  nomePessoa         String
+  quantidadePessoas  Int
+  token              String   @unique
+  createdAt          DateTime @default(now())
+}
+
+model Admin {
+
+  id String @id @default(uuid())
+
+  nome String
+
+  email String @unique
+
+  senha String
+
+  createdAt DateTime @default(now())
+
+}
