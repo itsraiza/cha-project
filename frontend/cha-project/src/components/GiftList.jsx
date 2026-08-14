@@ -278,7 +278,7 @@ const GiftList = () => {
         <div className="w-full flex justify-between items-center gap-4 max-md:flex-col max-md:justify-center">
         <div className="max-md:text-center">
           <h3 className="text-2xl font-montserrat">
-            Cotas para os eletrosdomesticos
+            Cotas para os eletrodomésticos
           </h3>
           <p className="font-extralight max-w-[530px]">
             Alguns eletrodomésticos possuem valores mais altos, então criamos a
