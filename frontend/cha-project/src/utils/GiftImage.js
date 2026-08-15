@@ -11,7 +11,6 @@ import chaleiraEletrica from "../assets/images/chaleiraEletrica.png"
 import sanduicheira from "../assets/images/sanduicheira.png"
 import cobertor from "../assets/images/cobertor.png"
 import edredom from "../assets/images/edredom.png"
-import lencolElastico from "../assets/images/lencolElastico.png"
 import jogoCama from "../assets/images/jogoCama.png"
 import toalhasRosto from "../assets/images/toalhasRosto.png"
 import organizadorBanheiro from "../assets/images/organizadorBanheiro.png"
@@ -60,7 +59,6 @@ export const GiftImage = {
     sanduicheira,
     cobertor,
     edredom,
-    lencolElastico,
     jogoCama,
     toalhasRosto,
     organizadorBanheiro,
