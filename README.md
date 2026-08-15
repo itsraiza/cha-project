@@ -69,6 +69,14 @@ cha-project/
 
 ```
 
+## 🌐 Deploy 
+
+🔹 Acesso
+
+- https://cha-izane.vercel.app/
+
+
+
 ## 💡 Sobre o projeto
 
 Este projeto foi desenvolvido para uso em meu chá de casa nova, com o objetivo de criar uma experiência simples para que os convidados possam consultar a lista de presentes e informar suas escolhas.
