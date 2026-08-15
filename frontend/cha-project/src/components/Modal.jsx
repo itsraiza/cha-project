@@ -18,9 +18,11 @@ const Modal = ({ isOpen, onClose, children }) => {
           relative
           w-full
           max-w-lg
+          max-h-[90vh]
           rounded-3xl
           bg-white
           shadow-xl
+          overflow-hidden
         "
         onClick={(e) => e.stopPropagation()}
       >
@@ -30,6 +32,7 @@ const Modal = ({ isOpen, onClose, children }) => {
             absolute
             top-4
             right-4
+            z-10
             p-2
             rounded-full
             hover:bg-gray-100
@@ -40,7 +43,13 @@ const Modal = ({ isOpen, onClose, children }) => {
           <X size={22} />
         </button>
 
-        <div className="p-6">
+        <div
+          className="
+            max-h-[90vh]
+            overflow-y-auto
+            p-6
+          "
+        >
           {children}
         </div>
       </div>

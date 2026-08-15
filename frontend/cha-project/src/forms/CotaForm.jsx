@@ -37,6 +37,10 @@ const CotaForm = ({ fechar, confirmar, loading }) => {
           </h3>
           <div className="space-y-2 text-sm text-slate-700 font-light">
             <div className="flex justify-between items-center bg-white/80 px-3 py-2 rounded-lg border border-amber-100/50">
+              <span>Cooktop</span>
+              <span className="font-semibold text-amber-800">R$ 47,85</span>
+            </div>
+            <div className="flex justify-between items-center bg-white/80 px-3 py-2 rounded-lg border border-amber-100/50">
               <span>Air-fryer</span>
               <span className="font-semibold text-amber-800">R$ 40,00</span>
             </div>

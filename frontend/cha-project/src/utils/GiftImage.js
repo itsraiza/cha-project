@@ -1,7 +1,7 @@
-import toalhasBanho from "../assets/toalhas-de-banho.png"
-import liquidificador from "../assets/liquidificador.png"
-import panelaArroz from "../assets/panelaArroz.png"
-import jogoPanelas from "../assets/jogoPanelas.png"
+import toalhasBanho from "../assets/images/toalhas-de-banho.png"
+import liquidificador from "../assets/images/liquidificador.png"
+import panelaArroz from "../assets/images/panelaArroz.png"
+import jogoPanelas from "../assets/images/jogoPanelas.png"
 import tapete from "../assets/images/tapete.webp"
 import cortinas from "../assets/images/cortinas.webp"
 import almofadas from "../assets/images/almofadas.png"
@@ -13,13 +13,10 @@ import cobertor from "../assets/images/cobertor.png"
 import edredom from "../assets/images/edredom.png"
 import lencolElastico from "../assets/images/lencolElastico.png"
 import jogoCama from "../assets/images/jogoCama.png"
-import travesseiros from "../assets/images/travesseiros.png"
 import toalhasRosto from "../assets/images/toalhasRosto.png"
 import organizadorBanheiro from "../assets/images/organizadorBanheiro.png"
 import varalChao from "../assets/images/varalChao.png"
 import mop from "../assets/images/mop.png"
-import bacia from "../assets/images/bacia.png"
-import balde from "../assets/images/balde.png"
 import multiprocessador from "../assets/images/multiprocessador.png"
 import airFryer from "../assets/images/airFryer.png"
 import faqueiro from "../assets/images/faqueiro.png"
@@ -32,9 +29,7 @@ import formasAluminio from "../assets/images/formasAluminio.png"
 import panelaPressao from "../assets/images/panelaPressao.png"
 import travessasVidro from "../assets/images/travessasVidro.png"
 import tacasVinho from "../assets/images/tacasVinho.png"
-import ralador from "../assets/images/ralador.png"
 import cuscuzeira from "../assets/images/cuscuzeira.png"
-import saleiro from "../assets/images/saleiro.png"
 import canecas from "../assets/images/canecas.png"
 import tabuaCorte from "../assets/images/tabuaCorte.png"
 import escorredor from "../assets/images/escorredor.png"
@@ -42,6 +37,11 @@ import jogoAmericano from "../assets/images/jogoAmericano.png"
 import frigideiras from "../assets/images/frigideiras.png"
 import jogoPratos from "../assets/images/jogoPratos.png"
 import panosPrato from "../assets/images/panosPrato.png"
+import aspiradorPo from "../assets/images/aspiradorPo.png"
+import cooktop from "../assets/images/cooktop.png"
+import garrafaCafe from "../assets/images/garrafaCafe.png"
+import ferroPassar from "../assets/images/ferroPassar.png"
+import cestoRoupa from "../assets/images/cestoRoupa.png"
 
 
 
@@ -62,13 +62,10 @@ export const GiftImage = {
     edredom,
     lencolElastico,
     jogoCama,
-    travesseiros,
     toalhasRosto,
     organizadorBanheiro,
     varalChao,
     mop,
-    bacia,
-    balde,
     multiprocessador,
     airFryer,
     faqueiro,
@@ -81,9 +78,7 @@ export const GiftImage = {
     panelaPressao,
     travessasVidro,
     tacasVinho,
-    ralador,
     cuscuzeira,
-    saleiro,
     canecas,
     tabuaCorte,
     escorredor,
@@ -91,10 +86,9 @@ export const GiftImage = {
     frigideiras,
     jogoPratos,
     panosPrato,
-    
-
-
-
-    
-
+    aspiradorPo,
+    cooktop,
+    garrafaCafe,
+    ferroPassar,
+    cestoRoupa
 }
