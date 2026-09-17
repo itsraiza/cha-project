@@ -4,7 +4,6 @@ import panelaArroz from "../assets/images/panelaArroz.png"
 import jogoPanelas from "../assets/images/jogoPanelas.png"
 import tapete from "../assets/images/tapete.webp"
 import cortinas from "../assets/images/cortinas.webp"
-import almofadas from "../assets/images/almofadas.png"
 import mantaSofa from "../assets/images/mantaSofa.png"
 import caixasOrganizadoras from "../assets/images/caixasOrganizadoras.png"
 import chaleiraEletrica from "../assets/images/chaleiraEletrica.png"
@@ -20,7 +19,6 @@ import multiprocessador from "../assets/images/multiprocessador.png"
 import airFryer from "../assets/images/airFryer.png"
 import faqueiro from "../assets/images/faqueiro.png"
 import portaTemperos from "../assets/images/portaTemperos.png"
-import peneiras from "../assets/images/peneiras.png"
 import xicarasCafe from "../assets/images/xicarasCafe.png"
 import potesHermeticos from "../assets/images/potesHermeticos.png"
 import jogoFacas from "../assets/images/jogoFacas.png"
@@ -32,7 +30,6 @@ import cuscuzeira from "../assets/images/cuscuzeira.png"
 import canecas from "../assets/images/canecas.png"
 import tabuaCorte from "../assets/images/tabuaCorte.png"
 import escorredor from "../assets/images/escorredor.png"
-import jogoAmericano from "../assets/images/jogoAmericano.png"
 import frigideiras from "../assets/images/frigideiras.png"
 import jogoPratos from "../assets/images/jogoPratos.png"
 import panosPrato from "../assets/images/panosPrato.png"
@@ -41,6 +38,10 @@ import cooktop from "../assets/images/cooktop.png"
 import garrafaCafe from "../assets/images/garrafaCafe.png"
 import ferroPassar from "../assets/images/ferroPassar.png"
 import cestoRoupa from "../assets/images/cestoRoupa.png"
+import jogoPotesSimples from "../assets/images/jogoPotesSimples.png"
+import kitGalheteiro from "../assets/images/kitGalheteiro.png"
+import kitUtensilios from "../assets/images/kitUtensilios.png"
+import aparelhoJantar from "../assets/images/aparelhoJantar.png"
 
 
 
@@ -52,7 +53,6 @@ export const GiftImage = {
     jogoPanelas,
     tapete,
     cortinas,
-    almofadas,
     mantaSofa,
     caixasOrganizadoras,
     chaleiraEletrica, 
@@ -68,9 +68,12 @@ export const GiftImage = {
     airFryer,
     faqueiro,
     portaTemperos,
-    peneiras,
     xicarasCafe,
     potesHermeticos,
+    jogoPotesSimples,
+    kitGalheteiro,
+    kitUtensilios,
+    aparelhoJantar,
     jogoFacas,
     formasAluminio,
     panelaPressao,
@@ -80,7 +83,6 @@ export const GiftImage = {
     canecas,
     tabuaCorte,
     escorredor,
-    jogoAmericano,
     frigideiras,
     jogoPratos,
     panosPrato,
