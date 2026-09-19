@@ -163,18 +163,21 @@ const GiftCard = ({
               <div
                 className="
                 w-full
-                h-2
+                h-0.5
                 bg-gray-200
                 rounded-full
                 overflow-hidden
                 
             "
-            >
+            >     
                 <div
                   className="
                   h-full
-                    bg-black
-                    "
+                  bg-gradient-to-r 
+                  from-red-400 
+                  via-yellow-300 
+                  to-purple-500
+                  "
                   style={{
                     width: `${progressoCotas}%`,
                   }}
@@ -200,12 +203,8 @@ const GiftCard = ({
                 Cancelar reserva
               </Button>
 
-              <div className="flex items-center gap-3 mt-3">
+              <div className="flex items-center mt-3">
                 <div className="h-0.5 flex-1 rounded-full bg-gradient-to-r from-red-400 via-yellow-300 to-purple-500" />
-
-                <span className="text-sm text-gray-500">{reservadoPor}</span>
-
-                <div className="h-0.5 flex-1 rounded-full bg-gradient-to-r from-purple-500 via-blue-400 to-red-400" />
               </div>
             </div>
           ) : (
@@ -214,12 +213,8 @@ const GiftCard = ({
                 Presente reservado
               </Button>
 
-              <div className="flex items-center gap-3 mt-3">
+              <div className="flex items-center mt-3">
                 <div className="h-0.5 flex-1 rounded-full bg-gradient-to-r from-red-400 via-yellow-300 to-purple-500" />
-
-                <span className="text-sm text-gray-500">{reservadoPor}</span>
-
-                <div className="h-0.5 flex-1 rounded-full bg-gradient-to-r from-purple-500 via-blue-400 to-red-400" />
               </div>
             </div>
           )

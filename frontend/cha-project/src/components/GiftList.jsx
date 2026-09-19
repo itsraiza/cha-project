@@ -29,9 +29,14 @@ const GiftList = () => {
   const [loadingId, setLoadingId] = useState(null);
   const [carregandoPresentes, setCarregandoPresentes] = useState(true);
 
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, [paginaAtual]);
+
   function mudarCategoria(categoria){
 
   setCategoriaSelecionada(categoria);
+  
 
   setPaginaAtual(1);
 
@@ -292,7 +297,7 @@ const GiftList = () => {
           </h3>
           <div className="flex gap-2">
             <p className="p-2 rounded-2xl bg-gray-600/20 text-center">$35,50</p>
-            <p className="p-2 rounded-2xl bg-gray-600/20">$40,00</p>
+            <p className="p-2 rounded-2xl bg-gray-600/20">$47,85</p>
           </div>
         </div>
         </div>

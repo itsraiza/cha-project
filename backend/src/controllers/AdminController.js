@@ -117,7 +117,12 @@ export const LoginAdmin = async (req, res) => {
 
         res.json({
             mensagem:"Login realizado",
-            token
+            token,
+            admin: {
+                id: admin.id,
+                nome: admin.nome,
+                email: admin.email
+            }
         });
 
 
