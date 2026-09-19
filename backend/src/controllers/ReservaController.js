@@ -48,6 +48,19 @@ export const CriarReserva = async (req, res) => {
     }
 }
 
+export const ListarReservas = async (req, res) => {
+    try {
+        const reservas = await prisma.reserva.findMany({
+            include: {
+                presente: true
+            }
+        });
+        return res.status(200).json({ reservas });
+    } catch (error) {
+        return res.status(500).json({ erro: "Erro ao listar reservas" });
+    }
+};
+
 export const CancelarReserva = async (req, res) => {
     try {
         const { presenteId } = req.params

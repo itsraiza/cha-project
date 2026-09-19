@@ -5,6 +5,7 @@ import GiftPage from "../pages/GiftPage";
 import MessagePage from "../pages/MessagePage";
 import { Toaster } from "react-hot-toast";
 import ScrollToTop from "./ScrollToTop";
+import PageList from "../pages/PageList";
 
 
 
@@ -19,6 +20,7 @@ const Pahts = () => {
                 <Route path="/sobrenos" element={<SobreNos />} />
                 <Route path="/presentes" element={<GiftPage />} />
                 <Route path="/recados" element={<MessagePage />} />
+                <Route path="/reservas" element={<PageList />} />
             </Routes>
           
          </BrowserRouter>
